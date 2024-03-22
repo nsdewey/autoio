@@ -1,6 +1,7 @@
 """ Library of BASH submission scripts for various programs
 """
 
+
 import os
 
 PATH = os.path.dirname(os.path.realpath(__file__))
@@ -16,7 +17,8 @@ MESSPF = (
     "#!/usr/bin/env bash\n"
     "export OMP_NUM_THREADS=10\n"
     "ulimit -c 0\n"
-    "messpf pf.inp >& pf.out"
+    # "messpf pf.inp >& pf.out"
+    "/home/ygeorgievski/build/crossrate/partition_function pf.inp >& pf.out"
 )
 MESSRATEV1 = (
     "#!/usr/bin/env bash\n"
